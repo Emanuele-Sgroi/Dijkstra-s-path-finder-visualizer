@@ -1,0 +1,198 @@
+.grid {
+  width: 100%;
+  height: 100%;
+  margin:0 0 0;
+  }
+
+  @media screen and (max-width: 800px){
+    .grid{
+      width: 1250px;
+      height: 900px;
+      text-align: center;
+    
+
+    
+    }
+  }
+
+  .headerContainer{
+    width: 100%;
+    height: 3.3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 1rem;
+    
+  }
+
+  h3{
+    text-align: center;
+    color: rgba(2, 2, 2, 0.914);
+    text-transform: uppercase;
+
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  @media screen and (max-width: 1200px){
+    h3{
+      font-size:1.3rem;
+      margin-top: 2.2rem;
+    }
+  }
+
+  h6{
+    color: red;
+    font-size:1rem;
+  }
+
+  @media screen and (max-width: 1200px){
+    h6{
+      font-size:0.8rem;
+      margin-bottom: 3rem;
+      margin-top: 0.2rem;
+    }
+  }
+
+  .buttonsContainer{
+    background-color:rgba(241, 241, 241, 0.4) ;
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttonsVisualizer{
+
+    margin:1.5rem;
+
+    border-radius: 50px;
+    padding: 5px;
+    background-color:rgba(1, 44, 161, 0.867) ;
+    border: transparent;
+
+    color: rgb(234, 232, 232);
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    font-weight: 700;
+  }
+
+  .buttonsVisualizer:hover{
+
+    background-color: rgb(255, 87, 51);
+    color:black;
+  }
+
+  .buttonsVisualizer:active {
+    transform: scale(0.90);
+}
+
+
+  .buttonsReset{
+
+    margin:1.5rem;
+
+    border-radius: 50px;
+    padding: 5px;
+    background-color:rgba(1, 44, 161, 0.867) ;
+    border: transparent;
+
+    color: rgb(234, 232, 232);
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    font-weight: 700;
+    
+  }
+
+  .buttonsReset:hover{
+
+    background-color: rgb(255, 87, 51);
+    color:black;
+  }
+
+  .buttonsReset:active {
+    transform: scale(0.90);
+}
+
+.smallTut{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px){
+  .smallTut{
+    flex-wrap: wrap;
+  }
+}
+
+
+.smallContainer{
+  margin: 1rem;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px){
+  .smallContainer{
+    margin: 0 0 0 0;
+  }
+}
+
+.start{
+  width:25px;
+  height: 25px;
+  background-color: green;
+  margin-left: 0.5rem;
+}
+
+.target{
+  width:25px;
+  height: 25px;
+  background-color: rgb(255, 87, 51);
+  margin-left: 0.5rem;
+}
+
+.wall{
+  width:25px;
+  height: 25px;
+  background-color: rgb(12, 53, 71);
+  margin-left: 0.5rem;
+}
+
+.visited{
+  width:25px;
+  height: 25px;
+  background-color: rgba(0, 190, 218, 0.75);
+  margin-left: 0.5rem;
+}
+
+.unvisited{
+  width:25px;
+  height: 25px;
+  background-color:rgba(1, 44, 161, 0.4) ;
+  margin-left: 0.5rem;
+}
+
+.path{
+  width:25px;
+  height: 25px;
+  background-color: rgb(255, 254, 106);
+  margin-left: 0.5rem;
+}
