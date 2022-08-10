@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Dijkstra-s-path-finder-visualizer/static/css/main.e4d6f06a.css",
+    "main.js": "/Dijkstra-s-path-finder-visualizer/static/js/main.ec265ae1.js",
+    "static/js/787.2036a371.chunk.js": "/Dijkstra-s-path-finder-visualizer/static/js/787.2036a371.chunk.js",
+    "static/media/animation_end.jpg": "/Dijkstra-s-path-finder-visualizer/static/media/animation_end.3701a77ced5c348e796e.jpg",
+    "static/media/animation_start.jpg": "/Dijkstra-s-path-finder-visualizer/static/media/animation_start.26372fcd6bcecc05c2ef.jpg",
+    "static/media/wall_true.jpg": "/Dijkstra-s-path-finder-visualizer/static/media/wall_true.f7da685e373cae036809.jpg",
+    "static/media/wall_false.jpg": "/Dijkstra-s-path-finder-visualizer/static/media/wall_false.d6f83da4ee6eca70ed0e.jpg",
+    "index.html": "/Dijkstra-s-path-finder-visualizer/index.html",
+    "main.e4d6f06a.css.map": "/Dijkstra-s-path-finder-visualizer/static/css/main.e4d6f06a.css.map",
+    "main.ec265ae1.js.map": "/Dijkstra-s-path-finder-visualizer/static/js/main.ec265ae1.js.map",
+    "787.2036a371.chunk.js.map": "/Dijkstra-s-path-finder-visualizer/static/js/787.2036a371.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4d6f06a.css",
+    "static/js/main.ec265ae1.js"
+  ]
+}
