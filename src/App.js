@@ -2,8 +2,6 @@ import React from 'react';
 import './App.css';
 
 import Visualizer from './pathfinderComponent/Visualizer';
-import Navbar from './Navbar/Navbar';
-import Tutorial from './Tutorial/Tutorial';
 import About from './About/About';
 
 function App() {
