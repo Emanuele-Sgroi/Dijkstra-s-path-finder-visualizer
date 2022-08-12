@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# DIJKSTRA'S PATH-FINDER VISUALIZER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Visit the demo here: https://emanuele-sgroi.github.io/Dijkstra-s-path-finder-visualizer/
+#
+## `Why this project?
 
-## Available Scripts
+This is a very basic React application that shows how this agorithm works. I am currently studying Computer Science and I keep learning new things every day. I wanted to try out something different and i was thinking to try some graph algorithms so i decided to start with tha classic one.
 
+This time I am not paying too much attention with the front-end (even if I love it), but ibelieve that the animation is actually pretty cool and works perfectly with the algorithm.
+
+## `Dijkstra algorithm`
+
+Dijkstra's algorithm was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later. It is an algorithm that is used to solve the shortest distance problem. That is, we use it to find the shortest distance between two vertices on a graph. Usually, applications like map use this algorithm in which we can find the shortest route, but, of course there are many others that use the same algorithm.
 In the project directory, you can run:
 
-### `npm start`
+### `About this algorithm`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Let the node at which we are starting be called the initial node. Let the distance of node Y be the distance from the initial node to Y. Dijkstra's algorithm will initially start with infinite distances and will try to improve them step by step.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  1.Mark all nodes unvisited. Create a set of all the unvisited nodes called the unvisited set.
+  
+  2.Assign to every node a tentative distance value: set it to zero for our initial node and to infinity for all other nodes. During the run of the algorithm, the         tentative distance of a node v is the length of the shortest path discovered so far between the node v and the starting node. Since initially no path is known to       any other vertex than the source itself (which is a path of length zero), all other tentative distances are initially set to infinity. Set the initial node as         current.
+  
+  3.For the current node, consider all of its unvisited neighbors and calculate their tentative distances through the current node. Compare the newly calculated           tentative distance to the one currently assigned to the neighbor and assign it the smaller one. For example, if the current node A is marked with a distance of 6,     and the edge connecting it with a neighbor B has length 2, then the distance to B through A will be 6 + 2 = 8. If B was previously marked with a distance greater       than 8 then change it to 8. Otherwise, the current value will be kept.
+  
+  4.When we are done considering all of the unvisited neighbors of the current node, mark the current node as visited and remove it from the unvisited set. A visited       node will never be checked again (this is valid and optimal in connection with the behavior in step 6.: that the next nodes to visit will always be in the order of     'smallest distance from initial node first' so any visits after would have a greater distance).
+  
+  5.If the destination node has been marked visited (when planning a route between two specific nodes) or if the smallest tentative distance among the nodes in the         unvisited set is infinity (when planning a complete traversal; occurs when there is no connection between the initial node and remaining unvisited nodes), then         stop. The algorithm has finished.
+  
+  6.Otherwise, select the unvisited node that is marked with the smallest tentative distance, set it as the new current node, and go back to step 3.
 
-### `npm test`
+#
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Conclusion`
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This is my first experiment with react and algorithms and I am looking forward to make more applications, hopefully huge ones
